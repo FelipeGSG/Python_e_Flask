@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POO</title>
+  <link rel="stylesheet" href="../static/poo.css"> 
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ url_for('index') }}">Início</a>
+      <a href="{{ url_for('python') }}">Python</a>
+      <a href="{{ url_for('poo') }}">POO</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">Modo Claro/Escuro</button>
+  </header>
+
+
+  <h1>🧠 O que é POO (Programação Orientada a Objetos)?</h1>
+  <p>
+    A Programação Orientada a Objetos (POO) é um modelo de organização do código que simula objetos do mundo real com suas características (atributos) e comportamentos (métodos).
+  </p>
+  <h2>🧩 Conceito</h2>
+  <p>
+    Na POO, o código é organizado em classes e objetos. Uma classe é como uma planta ou molde, e o objeto é a "coisa real" criada a partir dessa planta.
+  </p>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+
+  </script>
+</body>
+</html>

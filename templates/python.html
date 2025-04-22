@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O que é Python?</title>
+  <link rel="stylesheet" href="../static/python.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ url_for('index') }}">Início</a>
+      <a href="{{ url_for('python') }}">Python</a>
+      <a href="{{ url_for('poo') }}">POO</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">Modo Claro/Escuro</button>
+  </header>
+
+  <h1>🐍 O que é Python?</h1>
+  <p>Python é uma linguagem de programação de alto nível, fácil de aprender e muito versátil. Ela é usada em diversas áreas, como desenvolvimento web, análise de dados, inteligência artificial, automação, e muito mais.</p>
+
+  <p>🔧 Para que serve?</p>
+  <ul>
+    <li>Criar sites e aplicações web (com frameworks como Flask e Django)</li>
+    <li>Automatizar tarefas (como enviar e-mails ou renomear arquivos)</li>
+    <li>Analisar dados e fazer gráficos</li>
+    <li>Criar sistemas de inteligência artificial e aprendizado de máquina</li>
+    <li>Desenvolver jogos</li>
+  </ul>
+  <p>🌟 Vantagens de usar Python na vida profissional</p>
+  <ul>
+    <li>Linguagem muito usada no mercado de trabalho</li>
+    <li>Comunidade ativa e muito material gratuito na internet</li>
+    <li>Fácil de aprender, ideal para quem está começando</li>
+    <li>Usada em grandes empresas como Google, Netflix, Instagram, e Spotify</li>
+  </ul>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
+</body>
+</html>
